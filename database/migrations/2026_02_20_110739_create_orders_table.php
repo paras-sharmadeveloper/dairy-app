@@ -18,7 +18,6 @@ return new class extends Migration
             $table->date('date');
             $table->string('status')->default('pending');
             $table->string('source')->default('vendor');
-            $table->string('public_token')->unique()->nullable();
             $table->timestamps();
         });
     }
